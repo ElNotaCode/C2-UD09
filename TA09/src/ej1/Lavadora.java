@@ -1,5 +1,7 @@
 package ej1;
 
+//@Author ElNotaCode (Eloi Martorell) 18/04/2022
+
 public class Lavadora extends Electrodomestico {
 
 	protected int carga; //normalmente los valores de este tipo suelen estar redondeados, por lo que voy a usar un int

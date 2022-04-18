@@ -1,5 +1,7 @@
 package ej1;
 
+//@Author ElNotaCode (Eloi Martorell) 18/04/2022
+
 public class Television extends Electrodomestico {
 
 	protected int resolucion;
