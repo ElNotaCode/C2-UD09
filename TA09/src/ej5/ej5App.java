@@ -1,7 +1,5 @@
 package ej5;
 
-import java.util.HashMap;
-
 //@Author ElNotaCode (Eloi Martorell) 18/04/2022
 
 public class ej5App {
