@@ -1,7 +1,5 @@
 package ej1;
 
-import java.util.Iterator;
-
 //@Author ElNotaCode (Eloi Martorell) 16/04/2022
 
 public class Ej1App {
