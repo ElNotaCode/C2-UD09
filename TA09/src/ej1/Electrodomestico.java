@@ -165,11 +165,12 @@ public class Electrodomestico {
 	}
 
 	//precio final segun el consumo y el tamaño aumenta su precio
-	protected double precioFinal(char letra, double peso,double precioBase) {
+	protected double precioFinal() {
 
-		double precioFinal = precioBase;
-
-		switch (letra) {
+		double precioFinal = this.precioBase;
+		double peso = this.peso;
+		
+		switch (this.consumoEnergetico) {
 		case 'A':
 			precioFinal += 100;
 			break;

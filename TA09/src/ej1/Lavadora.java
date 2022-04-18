@@ -32,15 +32,17 @@ public class Lavadora extends Electrodomestico {
 	
 	@Override
 	public String toString() {
-		return "Lavadora [carga=" + carga + "]";
+		return "Lavadora [precioBase=" + precioBase + ", color=" + color + ", consumoEnergetico="
+				+ consumoEnergetico + ", peso=" + peso + ", carga=" + carga + "]";
 	}
 	
 	//sobrecarga precioFinal
-	protected double precioFinal(char letra, double peso,double precioBase, int carga) {
+	protected double precioFinal() {
 
-		double precioFinal = precioBase;
+		double precioFinal = this.precioBase;
+		double peso = this.peso; //lo he tenido que cambiar y esto va a ser mas rápido
 
-		switch (letra) {
+		switch (this.consumoEnergetico) {
 		case 'A':
 			precioFinal += 100;
 			break;
@@ -72,7 +74,7 @@ public class Lavadora extends Electrodomestico {
 				precioFinal += 100;
 			}
 			
-			if (carga > 30) {
+			if (this.carga > 30) {
 				precioFinal += 50;
 			}
 				
